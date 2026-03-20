@@ -7,6 +7,7 @@ This repository contains hands-on implementations of core backend concepts in Ja
 - Design Patterns
 - JVM Internals
 - Low-Level Design
+- Mini Projects
 
 ### Goal
 To build strong backend engineering fundamentals and system-level thinking.
