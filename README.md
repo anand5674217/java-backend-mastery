@@ -1,7 +1,7 @@
 ## Progress
 - [x] Thread basics
 - [x] Race condition
-- [ ] Odd Even
+- [x] Odd Even
 - [ ] Producer Consumer
 - [ ] Ping Pong
 - [ ] ABC Printer
