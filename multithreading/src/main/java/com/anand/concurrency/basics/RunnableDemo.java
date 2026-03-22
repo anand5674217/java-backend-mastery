@@ -1,6 +1,6 @@
 package com.anand.concurrency.basics;
 
-public class RunnableDemo {
+public class  RunnableDemo {
 
     static class MyTask implements Runnable{
         @Override
