@@ -16,6 +16,7 @@
     </properties>
 
     <modules>
+        <module>design-patterns/builder-pattern/message-builder</module>
         <module>multithreading</module>
     </modules>
 
