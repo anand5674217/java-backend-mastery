@@ -3,7 +3,7 @@
 Hands-on Java concurrency practice project.
 
 ## Topics covered
-- Thread basics
+- Thread basics 
 - Runnable vs Thread
 - Race condition
 - synchronized
