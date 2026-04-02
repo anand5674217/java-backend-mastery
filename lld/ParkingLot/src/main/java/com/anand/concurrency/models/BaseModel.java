@@ -17,18 +17,22 @@ public class BaseModel {
     }
 
     public Date getCreatedAt() {
-        return createdAt;
+        return copy(createdAt);
     }
 
     public void setCreatedAt(Date createdAt) {
-        this.createdAt = createdAt;
+        this.createdAt = copy(createdAt);
     }
 
     public Date getUpdatedAt() {
-        return updatedAt;
+        return copy(updatedAt);
     }
 
     public void setUpdatedAt(Date updatedAt) {
-        this.updatedAt = updatedAt;
+        this.updatedAt = copy(updatedAt);
+    }
+
+    private Date copy(Date value) {
+        return value == null ? null : new Date(value.getTime());
     }
 }
