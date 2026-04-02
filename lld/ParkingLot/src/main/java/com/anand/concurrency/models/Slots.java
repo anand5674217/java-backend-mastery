@@ -1,16 +1,16 @@
 package com.anand.concurrency.models;
 
+import java.util.ArrayList;
 import java.util.List;
 
-public class Slots extends BaseModel{
+public class Slots extends BaseModel {
     private int slotNumber;
-    private ParkingLotStatus parkingLotStatus;
+    private SlotStatus slotStatus;
     private List<VehicleTypes> allowedVehicleTypes;
-    public Slots(){
 
+    public Slots() {
+        this.allowedVehicleTypes = new ArrayList<>();
     }
-
-
 
     public int getSlotNumber() {
         return slotNumber;
@@ -20,19 +20,19 @@ public class Slots extends BaseModel{
         this.slotNumber = slotNumber;
     }
 
-    public ParkingLotStatus getParkingLotStatus() {
-        return parkingLotStatus;
+    public SlotStatus getSlotStatus() {
+        return slotStatus;
     }
 
-    public void setParkingLotStatus(ParkingLotStatus parkingLotStatus) {
-        this.parkingLotStatus = parkingLotStatus;
+    public void setSlotStatus(SlotStatus slotStatus) {
+        this.slotStatus = slotStatus;
     }
 
     public List<VehicleTypes> getAllowedVehicleTypes() {
-        return allowedVehicleTypes;
+        return List.copyOf(allowedVehicleTypes);
     }
 
     public void setAllowedVehicleTypes(List<VehicleTypes> allowedVehicleTypes) {
-        this.allowedVehicleTypes = allowedVehicleTypes;
+        this.allowedVehicleTypes = allowedVehicleTypes == null ? new ArrayList<>() : new ArrayList<>(allowedVehicleTypes);
     }
 }
