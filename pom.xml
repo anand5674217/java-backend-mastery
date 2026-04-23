@@ -17,6 +17,7 @@
 
     <modules>
         <module>design-patterns/builder-pattern/message-builder</module>
+        <module>design-patterns/prototype-pattern/user-prototype-registry</module>
         <module>design-patterns/singleton-pattern</module>
         <module>multithreading</module>
         <module>lld/ParkingLot</module>
