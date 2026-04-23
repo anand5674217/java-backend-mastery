@@ -16,6 +16,7 @@
     </properties>
 
     <modules>
+        <module>design-patterns/abstract-factory-pattern/document-processing-factory</module>
         <module>design-patterns/builder-pattern/message-builder</module>
         <module>design-patterns/prototype-pattern/user-prototype-registry</module>
         <module>design-patterns/simple-factory-pattern/document-processor-factory</module>
